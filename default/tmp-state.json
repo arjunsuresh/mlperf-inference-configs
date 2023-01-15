@@ -1,0 +1,67 @@
+{
+  "CM_SUT_CONFIG": {
+    "default-tvm-pip-install-onnx-vdefault": {
+      "bert-99": {
+        "MultiStream": {
+          "target_latency": 800
+        },
+        "Offline": {
+          "target_qps": 1.0
+        },
+        "Server": {
+          "target_qps": 1.0
+        },
+        "SingleStream": {
+          "target_latency": 100
+        }
+      },
+      "bert-99.9": {
+        "MultiStream": {
+          "target_latency": 800
+        },
+        "Offline": {
+          "target_qps": 1.0
+        },
+        "Server": {
+          "target_qps": 1.0
+        },
+        "SingleStream": {
+          "target_latency": 100
+        }
+      },
+      "resnet50": {
+        "MultiStream": {
+          "target_latency": 800
+        },
+        "Offline": {
+          "target_qps": 10
+        },
+        "Server": {
+          "target_qps": 9.0
+        },
+        "SingleStream": {
+          "target_latency": 90
+        }
+      },
+      "retinanet": {
+        "MultiStream": {
+          "target_latency": 4000
+        },
+        "Offline": {
+          "target_qps": 1.0
+        },
+        "Server": {
+          "target_qps": 1.0
+        },
+        "SingleStream": {
+          "target_latency": 1000
+        }
+      }
+    }
+  },
+  "RUN": {
+    "Offline": {}
+  },
+  "os_uname_all": "Linux hp-envy 5.15.0-52-generic #58-Ubuntu SMP Thu Oct 13 08:03:55 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux",
+  "os_uname_machine": "x86_64"
+}
